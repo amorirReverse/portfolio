@@ -1065,6 +1065,16 @@ MOBILE
     margin: 6px 0;
 }
 
+.architecture-arrow {
+    font-size: 0;
+}
+
+.architecture-arrow::after {
+    content: "↓";
+    font-size: 20px;
+    color: var(--secondary);
+}
+
     .architecture-node {
         width: 100%;
         box-sizing: border-box;
