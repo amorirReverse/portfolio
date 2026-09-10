@@ -1058,9 +1058,11 @@ MOBILE
     }
 
     .architecture-arrow {
-        text-align: center;
-        transform: rotate(90deg);
-    }
+    display: block;
+    text-align: center;
+    transform: rotate(90deg);
+    margin: 4px 0;
+}
 
     .architecture-node {
         width: 100%;
