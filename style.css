@@ -68,6 +68,8 @@ NAVIGATION
     left: 0;
     right: 0;
     z-index: 1000;
+
+    background: var(--background);
 width: min(100% - 48px, var(--max-width));
 
 
@@ -127,7 +129,7 @@ HERO
 .hero {
 
     padding-top: 120px;
-    
+
 width: min(100% - 48px, var(--max-width));
 
 
@@ -1023,6 +1025,7 @@ MOBILE
     justify-content: center;
 
     box-sizing: border-box;
+    background: var(--background);
 }
 
 nav {
