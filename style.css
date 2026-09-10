@@ -548,9 +548,11 @@ background:
 }
 
 .project-image img {
+    display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 
+  max-width: 100%;
   max-height: 410px;
 
   object-fit: contain;
@@ -559,6 +561,31 @@ background:
 
   transition: transform 0.4s ease;
 
+}
+
+@media (max-width: 900px) {
+
+.project-image {
+    min-height: auto;
+    padding: 20px;
+}
+
+.project-image img { 
+    width: 100%; 
+    height: auto; 
+    max-height: none; 
+}
+
+@media (max-width: 650px) {
+
+.project-image {
+    padding: 12px;
+}
+
+.project-image img { 
+    width: 100%; 
+    height: auto; 
+    max-height: none; 
 }
 
 .project-card .project-image img {
