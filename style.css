@@ -1013,7 +1013,19 @@ MOBILE
     }
 
     nav {
+        display: flex;
+        gap: 14px;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
         display: none;
+    }
+
+    nav a {
+        font-size: 12px;
     }
 
     .hero,
