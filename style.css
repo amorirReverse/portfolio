@@ -582,31 +582,6 @@ background:
 
 }
 
-@media (max-width: 900px) {
-
-.project-image {
-    min-height: auto;
-    padding: 20px;
-}
-
-.project-image img { 
-    width: 100%; 
-    height: auto; 
-    max-height: none; 
-}
-
-@media (max-width: 650px) {
-
-.project-image {
-    padding: 12px;
-}
-
-.project-image img { 
-    width: 100%; 
-    height: auto; 
-    max-height: none; 
-}
-
 .project-card .project-image img {
   transform: scale(1.02);
 }

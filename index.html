@@ -159,16 +159,49 @@
                     <span>CMake</span>
                 </div>
 
-                <a
-                    href="https://github.com/amorirReverse/car-dashboard"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-link"
-                >
-                    Voir le projet sur GitHub →
-                </a>
+                <div class="project-architecture">
 
-            </div>
+                    <p class="architecture-title">
+                        ARCHITECTURE
+                    </p>
+
+                    <div class="architecture-flow">
+                        <div class="architecture-node">
+                            <strong>Python</strong>
+                            <small>Simulation</small>
+                        </div>
+
+                        <span class="architecture-arrow">→</span>
+
+                        <div class="architecture-node">
+                            <strong>SocketCAN</strong>
+                            <small>vcan0</small>
+                        </div>
+                        
+                        <span class="architecture-arrow">→</span>
+
+                        <div class="architecture-node">
+                            <strong>C++17</strong>
+                            <small>CAN Receiver</small>
+                    </div>
+
+                    <span class="architecture-arrow">→</span>
+
+                        <div class="architecture-node">
+                            <strong>Qt6/QML</strong>
+                            <small>Interface</small>
+                        </div>
+                    </div>
+                </div>
+
+            <a
+                href="https://github.com/amorirReverse/car-dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+            >
+                Voir le projet sur GitHub →
+            </a>
 
         </div>
 
