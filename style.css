@@ -65,25 +65,22 @@ NAVIGATION
 .navbar {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
     z-index: 1000;
 
+    width: min(100% - 48px, var(--max-width));
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
     background: var(--background);
-width: min(100% - 48px, var(--max-width));
-
-
-margin: auto;
-
-height: 90px;
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-border-bottom: 1px solid var(--border);
-
-
+    border-bottom: 1px solid var(--border);
 }
 
 .logo {
@@ -1014,11 +1011,6 @@ MOBILE
 @media (max-width: 650px) {
 
     .navbar {
-        position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
     width: calc(100% - 32px);
     height: auto;
     min-height: 90px;
