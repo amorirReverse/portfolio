@@ -5,18 +5,20 @@ VARIABLES
 ========================================================= */
 
 :root {
---background: #080a0d;
---surface: #101318;
+--background: #0b0e12;
+--surface: #151a21;
 --surface-light: #151922;
 
 ```
---text: #f1f3f5;
---text-muted: #8b949e;
+--text: #ffffff;
+--text-muted: #b8c0ca;
 
---accent: #3b82f6;
+--accent: #4da3ff;
 --accent-light: #22d3ee;
 
---border: rgba(255, 255, 255, 0.08);
+--secondary: #35d6f4;
+
+--border: rgba(255, 255, 255, 0.12);
 
 --max-width: 1200px;
 ```
@@ -142,6 +144,7 @@ animation: heroAppear 0.8s ease forwards;
 
 .hero-name {
     margin-bottom: 14px;
+    color: #ffffff;
     font-family: "JetBrains Mono", monospace;
     font-size: 14px;
     font-weight: 600;
@@ -195,6 +198,11 @@ color: var(--text-muted);
 font-size: 18px;
 ```
 
+}
+
+.hero-tags span {
+    color: #d9e1ea;
+    border-color: rgba(255, 255, 255, 0.16);
 }
 
 .hero-tech {
