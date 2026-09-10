@@ -79,7 +79,7 @@ NAVIGATION
 
     box-sizing: border-box;
 
-    background-color: #0b0e12 !important;
+    background-color: red !important;
     opacity: 1 !important;
     border-bottom: 1px solid var(--border);
 }
