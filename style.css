@@ -917,7 +917,9 @@ RESPONSIVE
 }
 
 .project-image {
-    min-height: 350px;
+    min-height: 0;
+    height: auto;
+    padding: 12px;
 }
 ```
 
@@ -1000,6 +1002,52 @@ nav {
 footer {
     width: min(100% - 32px, var(--max-width));
 }
-```
 
+```css id="7p4x2m"
+.project-image {
+    height: auto;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .project-image {
+        height: auto;
+        min-height: 0;
+        padding: 20px;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .project-image {
+        height: auto;
+        min-height: 0;
+        padding: 8px;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        transform: none;
+    }
+
+    .project-card:hover .project-image img {
+        transform: none;
+    }
 }
