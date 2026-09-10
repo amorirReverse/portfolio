@@ -745,31 +745,32 @@ SKILLS
 
 .skills-grid {
 display: grid;
-
-
 grid-template-columns: repeat(2, 1fr);
-
 gap: 15px;
 
 
 }
 
 .skill-card {
-padding: 32px;
+    position: relative;
+    
+    padding: 32px;
+    
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    
+    background: var(--surface);
 
-
-border: 1px solid var(--border);
-
-border-radius: 10px;
-
-background: var(--surface);
-
-transition:
+    transition:
     transform 0.25s ease,
+    
     border-color 0.25s ease;
-
-
+    
 }
+
+
+
+
 
 .skill-card:hover {
 transform: translateY(-4px);
@@ -780,8 +781,21 @@ border-color: rgba(59, 130, 246, 0.3);
 
 }
 
+.skill-number {
+    display: block;
+
+    margin-bottom: 24px;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+
+    color: var(--accent-light);
+}
+
 .skill-card h3 {
-margin-bottom: 10px;
+margin-bottom: 12px;
 
 
 font-family: "Space Grotesk", sans-serif;
@@ -792,14 +806,34 @@ font-size: 21px;
 }
 
 .skill-card p {
-color: var(--text-muted);
 
+    margin-bottom: 24px;
+    
+    color: var(--text-muted);
+    
+    font-size: 14px;
+    line-height: 1.7;
 
-font-family: "JetBrains Mono", monospace;
+}
 
-font-size: 12px;
+.skill-card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
 
+.skill-card .tags span {
+    padding: 6px 9px;
 
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+
+    color: var(--text-muted);
 }
 
 /* =========================================================
