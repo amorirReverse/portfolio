@@ -140,6 +140,15 @@ gap: 80px;
 animation: heroAppear 0.8s ease forwards;
 }
 
+.hero-name {
+    margin-bottom: 14px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
 .eyebrow {
 margin-bottom: 24px;
 
