@@ -1014,6 +1014,11 @@ MOBILE
 @media (max-width: 650px) {
 
     .navbar {
+        position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     width: calc(100% - 32px);
     height: auto;
     min-height: 90px;
