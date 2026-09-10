@@ -68,7 +68,7 @@ NAVIGATION
     left: 50%;
     transform: translateX(-50%);
 
-    z-index: 1000;
+    z-index: 9999;
 
     width: min(100% - 48px, var(--max-width));
     height: 90px;
@@ -79,7 +79,8 @@ NAVIGATION
 
     box-sizing: border-box;
 
-    background: var(--background);
+    background-color: #151a21 !important;
+    opacity: 1 !important;
     border-bottom: 1px solid var(--border);
 }
 
