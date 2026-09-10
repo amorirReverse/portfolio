@@ -63,6 +63,11 @@ NAVIGATION
 ========================================================= */
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 width: min(100% - 48px, var(--max-width));
 
 
