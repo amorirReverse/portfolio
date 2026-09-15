@@ -351,12 +351,17 @@
             autour du C, du C++ et des systèmes embarqués ?
         </p>
 
+        <div class="contact-success" data-fs-success>
+            ✓ Message envoyé avec succès. Merci pour votre message.
+        </div>
+
         <form
+            id="contact-form"
             class="contact-form"
             action="https://formspree.io/f/xppzvebj"
             method="POST"
         >
-
+        
             <div class="form-group"> 
                 <label for="name">Nom</label> 
                 <input 
@@ -404,6 +409,8 @@
             <button type="submit" class="button primary"> 
                 Envoyer le message → 
             </button>
+
+            
         </form>
 
     </section>
@@ -426,6 +433,20 @@
 
 </footer>
 
+<script>
+    window.formspree =
+        window.formspree ||
+        function () {
+            (formspree.q = formspree.q || []).push(arguments);
+        };
+
+    formspree("initForm", {
+        formElement: "#contact-form",
+        formId: "xppzvebj"
+    });
+</script>
+
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
 </body>
 </html>

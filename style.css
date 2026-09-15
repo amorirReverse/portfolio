@@ -1175,6 +1175,12 @@ nav a {
     .contact-form .button {
     width: 100%;
     }
+    .contact-success {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 14px 16px;
+    font-size: 13px;
+    }
 }
 
 /* =========================================================
@@ -1254,4 +1260,27 @@ CONTACT FORM
     align-self: flex-start;
     border: none;
     cursor: pointer;
+}
+
+.contact-success {
+    display: none;
+
+    width: min(100%, 650px);
+    margin: 0 auto 30px;
+    padding: 16px 20px;
+
+    box-sizing: border-box;
+
+    border: 1px solid var(--accent);
+    border-radius: 7px;
+
+    background: var(--surface);
+    color: var(--text);
+
+    font-size: 14px;
+    text-align: center;
+}
+
+.contact-success[data-fs-active] {
+    display: block;
 }
