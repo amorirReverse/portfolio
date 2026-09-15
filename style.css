@@ -1167,4 +1167,91 @@ nav a {
     footer {
         width: min(100% - 32px, var(--max-width));
     }
+
+    .contact-form {
+    width: 100%;
+    }
+
+    .contact-form .button {
+    width: 100%;
+    }
+}
+
+/* =========================================================
+CONTACT FORM
+========================================================= */
+
+.contact-intro {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    color: var(--text-muted);
+}
+
+.contact-form {
+    width: min(100%, 650px);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    background: var(--surface);
+
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #6f7884;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+    background: var(--surface-light);
+}
+
+.contact-form .button {
+    align-self: flex-start;
+    border: none;
+    cursor: pointer;
 }
