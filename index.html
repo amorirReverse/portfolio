@@ -24,6 +24,7 @@
 
     <nav>
         <a href="#">Accueil</a>
+        <a href="#experiences">Expériences</a>
         <a href="#projets">Projets</a>
         <a href="#competences">Compétences</a>
         <a href="#apropos">À propos</a>
@@ -114,69 +115,188 @@
     </section>
 
 
-    <!-- Projets --> 
-     <section id="projets" class="section"> 
-        <div class="section-header"> 
-            <p class="section-number">01 / PROJETS</p> 
-            <h2>Ce que j'ai fait</h2> 
-        </div>
-        
-        <!-- EXPERIENCE PROFESSIONNELLE -->
+    <!-- Expériences professionnelles -->
+     <section id="experiences" class="section">
+        <div class="section-header">
+            <p class="section-number">
+                01 / EXPÉRIENCES PROFESSIONNELLES
+            </p>
 
-        <div class="project-card">
+            <h2>
+                Ce que j'ai fait en entreprise
+            </h2>
+        </div>
+
+        <!-- WELCOMR -->
+         <div class="project-card">
             <div class="project-content">
 
                 <p class="project-label">
-                    EXPÉRIENCE PROFESSIONNELLE (WELCOMR) - 2024-2025
+                    EXPÉRIENCE PROFESSIONNELLE · 2023 — 2025
                 </p>
 
-                <h3 class="project-title">
-                    ALTERNANCE INGENIEUR R&D - WELCOMR SAS
+                <h3 class="project-title"> 
+                    WELCOMR SAS 
                 </h3>
 
-                <p class="project-subtitle">
-                    Conception et développement de trois Proof of Concept autonomes sur 
-                    microcontrôleur STM32WB55, dans un contexte R&D pluridisciplinaire.
+                <p class="project-subtitle"> 
+                    Ingénieur systèmes embarqués · R&amp;D 
                 </p>
 
-                <p class="project-label">
-                    Projet 01 - Reader-MDB
+                <p> 
+                    Conception et développement de trois Proof of Concept 
+                    autonomes sur microcontrôleur STM32WB55, dans un contexte 
+                    R&amp;D pluridisciplinaire. 
                 </p>
 
+                <!-- Reader MDB -->
+                 <div class="project-role">
 
-                <p class="project-description">
-                    Développement d'un POC embarqué dans le cadre des activités R&D 
-                    de WELCOMR, autour du protocole MDB et des systèmes de paiement.
-                </p>
+                    <p class="architecture-title"> 
+                        PROJET 01 · READER MDB 
+                    </p>
 
-                <div class="project-role">
+                    <p> 
+                        Développement d'un POC embarqué autour du protocole MDB 
+                        pour permettre le contrôle d'accès à des machines à café 
+                        compatibles MDB. 
+                    </p>
 
-                    <p class="architecture-title">
-                        MON RÔLE
+                    <p class="architecture-title"> 
+                        MON RÔLE 
                     </p>
 
                     <ul>
-                        <li>DDéveloppement du module MDB en C sur STM32WB55</li>
-                        <li>Gestion du protocole maitre / esclave</li>
-                        <li>Mise en place d'une machine à états</li>
-                        <li>Mise en place de tests unitaires</li>
-                        <li>Validation du fonctionnement sur système réel</li>
+                         <li>Développement du module MDB en C sur STM32WB55</li> 
+                         <li>Gestion du protocole maître / esclave</li> 
+                         <li>Mise en place d'une machine à états</li> 
+                         <li>Développement des différentes couches de communication</li> 
+                         <li>Mise en place de tests unitaires</li> 
+                         <li>Validation du fonctionnement sur système réel</li> 
                     </ul>
+
+                    <p class="architecture-title"> 
+                        RÉSULTAT 
+                    </p>
+
+                    <p> POC livré et déployé chez un client, intégré à un produit 
+                        actuellement en service. 
+                    </p>
+
+                    <div class="tags"> 
+                        <span>C</span> 
+                        <span>STM32WB55</span> 
+                        <span>FreeRTOS</span> 
+                        <span>MDB</span> 
+                        <span>Cgreen</span> 
+                        <span>CMake</span> 
+                        <span>LCOV</span> 
+                    </div>
+                 </div>
+
+                 <!-- Simulateur OSS -->
+                  <div class="project-role">
+                    <p class="architecture-title"> 
+                        PROJET 02 · SIMULATEUR OSS / UPDATER 
+                    </p>
+
+                    <p> Développement d'un simulateur permettant de tester 
+                        l'injection de données JSON, la génération de trames OSS 
+                        et l'écriture de badges Mifare DESFire. 
+                    </p>
+
+                    <p class="architecture-title"> 
+                        MON RÔLE 
+                    </p>
+
+                    <ul> 
+                        <li>Implémentation du protocole OSS</li> 
+                        <li>Développement d'un simulateur d'Updater</li> 
+                        <li>Génération de trames OSS à partir de données JSON</li> 
+                        <li>Lecture et écriture de badges Mifare DESFire</li> 
+                        <li>Développement et validation du POC</li> 
+                    </ul>
+
+                    <p class="architecture-title"> 
+                        RÉSULTAT 
+                    </p>
+
+                    <p> 
+                        Simulateur fonctionnel présenté et démontré en interne. 
+                    </p>
+
+                    <div class="tags"> 
+                        <span>C</span> 
+                        <span>STM32WB55</span> 
+                        <span>OSS</span> 
+                        <span>JSON</span> 
+                        <span>Mifare DESFire</span> 
+                        <span>FreeRTOS</span> 
+                    </div>
+
                 </div>
 
-                <div class="tags">
-                    <span>C</span>
-                    <span>STM32WB55</span>
-                    <span>FreeRTOS</span>
-                    <span>MDB</span>
-                    <span>Cgreen</span>
-                    <span>CMake</span>
-                    <span>LCOV</span>
-                    <span>Git</span>
+                <!-- G-Bus Detector -->
+                 <div class="project-role">
+                    <p class="architecture-title"> 
+                        PROJET 03 · G-BUS DETECTOR 
+                    </p>
+
+                    <p> 
+                        Développement d'un outil de diagnostic permettant 
+                        d'identifier automatiquement un protocole G-Bus et son 
+                        débit sur une liaison RS485. 
+                    </p>
+
+                    <p class="architecture-title"> 
+                        MON RÔLE 
+                    </p>
+
+                    <ul> 
+                        <li>Développement de l'acquisition de tension par ADC</li> 
+                        <li>Détection des différents protocoles</li> 
+                        <li>Calcul du baudrate à partir des timers</li> 
+                        <li>Développement de l'interface TFT avec LVGL et SPI</li> 
+                        <li>Validation du prototype en conditions réelles</li> 
+                    </ul>
+
+                    <p class="architecture-title"> 
+                        RÉSULTAT 
+                    </p>
+
+                    <p> Prototype validé avec l'ensemble des fonctionnalités 
+                        testées sur un hub G-Bus réel. 
+                    </p>
+
+                    <div class="tags"> 
+                        <span>C</span> 
+                        <span>STM32WB55</span> 
+                        <span>G-Bus</span> 
+                        <span>RS485</span> 
+                        <span>LVGL</span> 
+                        <span>SPI</span> 
+                        <span>ADC</span> 
+                    </div>
+                 
                 </div>
+
             </div>
+         
+        </div>
+
+    </section>
+
+
+    <!-- Projets --> 
+     <section id="projets" class="section"> 
+        <div class="section-header"> 
+            <p class="section-number">
+                02 / PROJETS PERSONNELS
+            </p> 
+            <h2>Ce que j'ai fait chez moi et à l'école</h2> 
         </div>
         
+               
         <!-- PROJET 01 : CAR DASHBOARD --> 
          <div class="project-card"> 
             <div class="project-image"> 
