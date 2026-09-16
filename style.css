@@ -595,8 +595,10 @@ background:
 }
 
 .project-role {
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 30px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border);
 }
 
 .project-role .architecture-title {
